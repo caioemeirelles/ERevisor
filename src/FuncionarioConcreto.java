@@ -10,6 +10,10 @@ public class FuncionarioConcreto implements FabricaDeUsuario{
         return false;
     }
 
+    public int getId(String getEmail) {
+        return 0;
+    }
+
     public FuncionarioConcreto() {
         id = 0;
         nome = null;
