@@ -26,7 +26,7 @@ class Permissoes {
         List<Boolean> list = new ArrayList<>();
         list.add(false);     //editarEixoTematico);
         list.add(false);     //editarRevisor);
-        list.add(true);     //editarStatusArtigo);
+        list.add(true);      //editarStatusArtigo);
         list.add(false);     //verArtigos);
         list.add(false);     //verPagamento);
         return list;
