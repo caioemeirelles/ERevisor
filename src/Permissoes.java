@@ -13,7 +13,7 @@ class Permissoes {
     private Permissoes() {
     }
 
-    private List<Boolean> permissoesAutor(){
+    private static List<Boolean> permissoesAutor(){
         List<Boolean> list = new ArrayList<>();
         list.add(false);     //editarEixoTematico);
         list.add(false);     //editarRevisor);
@@ -22,7 +22,7 @@ class Permissoes {
         list.add(false);     //verPagamento);
         return list;
     }
-    private List<Boolean> permissoesRevisor(){
+    private static List<Boolean> permissoesRevisor(){
         List<Boolean> list = new ArrayList<>();
         list.add(false);     //editarEixoTematico);
         list.add(false);     //editarRevisor);
@@ -31,7 +31,7 @@ class Permissoes {
         list.add(false);     //verPagamento);
         return list;
     }
-    private List<Boolean> permissoesEditor(){
+    private static List<Boolean> permissoesEditor(){
         List<Boolean> list = new ArrayList<>();
         list.add(true);     //editarEixoTematico);
         list.add(true);     //editarRevisor);
@@ -41,13 +41,13 @@ class Permissoes {
         return list;
     }
 
-    protected List<Boolean> getPermissao(SessionFactory session){
+    protected static List<Boolean> getPermissao(String tipo){
         List<Boolean> list = new ArrayList<>();
-        if (session.tipo.equals("autor"))
+        if (tipo.equals("autor"))
             return permissoesAutor();
-        else if (session.tipo.equals("revisor"))
+        else if (tipo.equals("revisor"))
             return permissoesRevisor();
-        else if (session.tipo.equals("editor"))
+        else if (tipo.equals("editor"))
             return permissoesEditor();
 
         return null;

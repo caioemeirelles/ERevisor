@@ -1,13 +1,16 @@
+import java.util.List;
+
 public class FuncionarioConcreto implements FabricaDeUsuario{
     private int id;
     private String nome;
     private String email;
     private String senha;
+    private String tipo = null;
+    private List<Boolean> permissoes = null;
 
     @Override
-    public boolean pedePermissao(){
-        /*Precisa fazer override em quem extender essa classe*/
-        return false;
+    public void pedePermissao(){    /*CHAMAR ISSO NOS CONSTRUTORES DE USUÁRIOS*/
+        permissoes = Permissoes.getPermissao(tipo);
     }
 
     public int getId(String getEmail) {

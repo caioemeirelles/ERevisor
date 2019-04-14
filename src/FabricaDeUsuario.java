@@ -1,5 +1,5 @@
 public interface FabricaDeUsuario {
-    boolean pedePermissao();
+    void pedePermissao();
 
     int getId();
 
