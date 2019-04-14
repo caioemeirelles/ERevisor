@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class FuncionarioConcreto implements FabricaDeUsuario{
+public class UsuarioConcreto implements FabricaDeUsuario{
     private int id;
     private String nome;
     private String email;
@@ -17,14 +17,14 @@ public class FuncionarioConcreto implements FabricaDeUsuario{
         return 0;
     }
 
-    public FuncionarioConcreto() {
+    public UsuarioConcreto() {
         id = 0;
         nome = null;
         email = null;
         senha = null;
     }
 
-    public FuncionarioConcreto(int _id, String _nome, String _email, String _senha){
+    public UsuarioConcreto(int _id, String _nome, String _email, String _senha){
         id = _id;
         nome = _nome;
         email = _email;
