@@ -5,7 +5,7 @@ public class UsuarioConcreto implements FabricaDeUsuario{
     private String nome;
     private String email;
     private String senha;
-    private String tipo = null;
+    public String tipo = null;
     private List<Boolean> permissoes = null;
 
     @Override
