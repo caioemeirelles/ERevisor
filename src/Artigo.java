@@ -34,4 +34,9 @@ public class Artigo {
         dataResumo = new Date();
         System.out.println(dataResumo);
     }
+
+    public void submeteArtigo(String _artigo){
+        artigo = _artigo;
+        dataArtigo = new Date();
+    }
 }

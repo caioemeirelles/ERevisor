@@ -6,9 +6,6 @@ public class Main {
 
         System.out.println("teste caraio");
 
-        Artigo teste = new Artigo(null, null, null, null);
-
-
 
     }
 }
