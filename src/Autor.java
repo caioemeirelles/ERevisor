@@ -15,11 +15,19 @@ public class Autor extends Usuario {
         artigo = new Artigo(eixoTematico, _titulo, _resumo, _autores);
     }
 
-    public void submeteInscricao(){
-
+    public void submeteInscricao(String _inscricao){
+        if (_inscricao != null)
+            inscricao = _inscricao;
     }
 
     public void submeteArtigo(String _artigo){
-        artigo.submeteArtigo(_artigo);
+        if (isInscrito())
+            artigo.submeteArtigo(_artigo);
+    }
+
+    public boolean isInscrito(){
+        if(inscricao != null)
+            return true;
+        return false;
     }
 }

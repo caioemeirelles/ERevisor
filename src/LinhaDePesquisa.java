@@ -1,10 +1,20 @@
-public class LinhaDePesquisa {
+import java.util.ArrayList;
+import java.util.List;
 
-    private String nome;
+class LinhaDePesquisa {
+    private static LinhaDePesquisa ourInstance = new LinhaDePesquisa();
 
-    public LinhaDePesquisa(String nome){
+    private LinhaDePesquisa(){
+    }
 
-        this.nome = nome;
+    protected static LinhaDePesquisa getInstance() {
+        return ourInstance;
+    }
+
+    private static List<String> nomes = new ArrayList<>();
+
+    public static void criaLinhaPesquisa(String nome){
+        nomes.add(nome);
     }
 
 }
