@@ -1,4 +1,4 @@
-public class Editor  extends UsuarioConcreto {
+public class Editor  extends Usuario {
 
     public void Editor() {
         tipo = "Editor";

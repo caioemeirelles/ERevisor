@@ -1,6 +1,6 @@
 import java.util.List;
 
-public class UsuarioConcreto implements FabricaDeUsuario{
+public class Usuario implements FabricaDeUsuario{
     private int id;
     private String nome;
     private String email;
@@ -17,14 +17,14 @@ public class UsuarioConcreto implements FabricaDeUsuario{
         return 0;
     }
 
-    public UsuarioConcreto() {
+    public Usuario() {
         id = 0;
         nome = null;
         email = null;
         senha = null;
     }
 
-    public UsuarioConcreto(int _id, String _nome, String _email, String _senha){
+    public Usuario(int _id, String _nome, String _email, String _senha){
         id = _id;
         nome = _nome;
         email = _email;

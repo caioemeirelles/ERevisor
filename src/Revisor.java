@@ -1,4 +1,4 @@
-public class Revisor extends UsuarioConcreto {
+public class Revisor extends Usuario {
 
 public void Revisor(){
         tipo = "Revisor";
